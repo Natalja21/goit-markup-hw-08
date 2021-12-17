@@ -1,0 +1,41 @@
+.about {
+	background: $predominantBg;
+	margin-bottom: 94px;
+}
+.about__title {
+	@include text(36px, 1.17, 0.03em, 700);
+	text-align: center;
+	color: $title-color;
+	
+	margin-bottom: 50px;
+}
+
+.about-list {
+	display: flex;
+}
+.about-list__item {
+	flex-basis: calc((100% - 60px) / 3);
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+.about-list__content {
+	position: relative;
+}
+.about-list__text {
+	position: absolute;
+	width: 100%;
+	height: 70px;
+	bottom: 0;
+	left: 0;
+
+	@include text(14px, 1.14, 0.03em, 700);
+	text-align: center;
+	text-transform: uppercase;
+	color: $whiteText-color;
+	background-color: rgba(47, 48, 58, 0.8);
+
+	padding-top: 27px;
+	padding-bottom: 27px;
+}

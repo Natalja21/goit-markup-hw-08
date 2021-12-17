@@ -1,0 +1,33 @@
+.features {
+	background: $predominantBg;
+}
+.features-list {
+	display: flex;
+}
+
+.features-list__item:not(:last-child) {
+	margin-right: 30px;
+}
+.features-list__icon {
+	width: 270px;
+	height: 120px;
+	background-color: rgba(245, 244, 250, 1);
+	border-radius: 4px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-bottom: 30px;
+}
+.features-list__subtitle {
+	@include text(14px, 1.14, 0.03em, 700);
+	text-transform: uppercase;
+	color: $subtitle-color;
+
+	margin-bottom: 10px;
+}
+.features-list__text {
+	@include text(14px, 1.71, 0.03em, 400);
+	color: $text-color;
+}
