@@ -1,6 +1,6 @@
 .logo {
 	font-family: "Raleway", sans-serif;
-	@include text(26px, 1.19, 0.03em, 700);	
+	@include text(26px, 1.19, 0.03em, 700);
 	text-decoration: none;
 	color: $accent-color;
 	&--black {
@@ -12,9 +12,18 @@
 }
 
 .header__logo {
-	margin-right: 93px;
-	padding-top: 24px;
+	padding-top: 16px;
 	padding-bottom: 24px;
+	@media screen and (min-width: 768px) {
+		margin-right: 88px;
+		padding-top: 26px;
+		padding-bottom: 26px;
+	}
+	@media screen and (min-width: 1200px) {
+		margin-right: 93px;
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
 }
 
 .footer__logo {
