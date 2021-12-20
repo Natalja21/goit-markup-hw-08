@@ -1,16 +1,26 @@
 .hero {
-	padding-top: 200px;
-	padding-bottom: 200px;
+	padding-top: 118px;
+	padding-bottom: 118px;
 	text-align: center;
 	background: $thirdBg;
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/mob-hero-1x.jpg");	
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	max-width: 1600px;
-	
 	&--indent {
 		margin: 0 auto;
+	}
+
+	@media screen and (min-width: 768px) {
+		
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/tab-hero-1x.jpg");
+	}
+	@media screen and (min-width: 1200px) {
+
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero.jpg");
+		padding-top: 200px;
+		padding-bottom: 200px;
 	}
 }
 
@@ -20,21 +30,21 @@
 	align-items: center;
 }
 .hero__title {
-	color: $heroTitle-color;
-	font-weight: 900;
-	@include text(44px, 1.36, 0.06em, 400);
+	@include text(26px, 1.62, 0.06em, 900);
 	text-align: center;
 	text-transform: uppercase;
-
-	width: 696px;
-	margin-bottom: 30px;
+	color: $heroTitle-color;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 30px;
+
+	@media screen and (min-width: 1200px) {
+		@include text(44px, 1.36, 0.06em, 900);
+		width: 696px;
+	}
 }
-.hero__button {
-	font-family: inherit;
-	font-weight: 700;
-	@include text(16px, 1.87, 0.06em, 400);
+.hero__button {		
+	@include text(16px, 1.87, 0.06em, 700);
 	align-items: center;
 	color: $btnText-color;
 	background-color: $bgBtn;
