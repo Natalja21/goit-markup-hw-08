@@ -1,6 +1,10 @@
 .about {
+	@media screen and (max-width: 1199px) {
+	display: none;
+	}
 	background: $predominantBg;
 	margin-bottom: 94px;
+	
 }
 .about__title {
 	@include text(36px, 1.17, 0.03em, 700);
