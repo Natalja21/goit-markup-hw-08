@@ -9,6 +9,7 @@ body {
 	padding-right: 15px;
 	margin: 0 auto;
 	
+	
 
 	@media screen and (min-width: 480px) {
 		
@@ -29,4 +30,9 @@ body {
 		padding-bottom: 94px;
 		padding-top: 94px;
 	}
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
