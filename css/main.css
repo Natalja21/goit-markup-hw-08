@@ -495,7 +495,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1119px) {
+@media screen and (max-width: 1199px) {
   .team-list {
     margin-bottom: -30px;
   }
@@ -515,7 +515,7 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (max-width: 1119px) {
+@media screen and (max-width: 1199px) {
   .team-list__item {
     margin-bottom: 30px;
   }
@@ -586,7 +586,7 @@ img {
   margin-right: -30px;
 }
 
-@media screen and (max-width: 1119px) {
+@media screen and (max-width: 1199px) {
   .clients-list {
     margin-bottom: -30px;
   }
@@ -599,7 +599,7 @@ img {
   margin-right: 30px;
 }
 
-@media screen and (max-width: 1119px) {
+@media screen and (max-width: 1199px) {
   .clients-list__item {
     margin-bottom: 30px;
   }
@@ -928,6 +928,9 @@ img {
 }
 
 .projects-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
   position: relative;
   overflow: hidden;
 }
