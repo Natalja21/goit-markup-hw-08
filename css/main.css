@@ -1214,12 +1214,12 @@ img {
 }
 
 .social-list--indent {
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 
 @media screen and (min-width: 1200px) {
   .social-list--indent {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 }
 
