@@ -17,8 +17,8 @@
 	background-color: rgba(255, 255, 255, 1);
 }
 .modal {
-	width: 528px;
-	min-height: 581px;
+	width: 450px;
+	min-height: 609px;
 	padding: 40px;
 	background-color: #ffffff;
 	border-radius: 4px;
@@ -29,6 +29,10 @@
 	left: 50%;
 	transform: scale(1) rotateX(0) translate(-50%, -50%);
 	transition-property: background-color;
+	@media screen and (min-width: 1200px) {
+		width: 528px;
+		min-height: 581px;
+	}
 }
 .modal__title {
 	@include text(20px, 1.15, 0.03em, 700);
@@ -102,7 +106,7 @@
 	top: 50%;
 	transform: translateY(-50%);
 	left: 14px;
-	
+
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-field .modal-field__input:focus + .modal-field__icon {
@@ -140,7 +144,7 @@
 }
 
 .subscribe-checkbox__text {
-	@include text(14px, 1.71, 0.03em, 400);	
+	@include text(14px, 1.71, 0.03em, 400);
 	color: #757575;
 
 	margin-bottom: 30px;
@@ -186,19 +190,18 @@
 
 .modal-btn {
 	display: block;
-	@include text(16px, 1.87, 0.06em, 700);	
+	@include text(16px, 1.87, 0.06em, 700);
 	text-align: center;
 	align-items: center;
-	color: $whiteText-color;	
-	background-color: #2196f3;	
+	color: $whiteText-color;
+	background-color: #2196f3;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	border: transparent;
 	cursor: pointer;
 
-	padding: 10px 55px;	
+	padding: 10px 55px;
 	&--indent {
-        margin: 0px auto;
+		margin: 0px auto;
 	}
-	
 }
