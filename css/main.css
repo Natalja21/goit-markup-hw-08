@@ -1214,7 +1214,13 @@ img {
 }
 
 .social-list--indent {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-list--indent {
+    margin-bottom: 30px;
+  }
 }
 
 .social-list__item {

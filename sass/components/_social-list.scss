@@ -3,7 +3,11 @@
 	justify-content: center;
 
 	&--indent {
-		margin-bottom: 30px;
+
+		margin-bottom: 24px;
+		@media screen and (min-width: 1200px) {
+			margin-bottom: 30px;
+		}
 	}
 }
 .social-list__item {
