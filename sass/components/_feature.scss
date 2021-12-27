@@ -42,6 +42,10 @@
 	margin-bottom: 30px;
 }
 .features-list__subtitle {
+	@media screen and (max-width: 767px) {
+		text-align: center;
+
+	}
 	@include text(14px, 1.14, 0.03em, 700);
 	text-transform: uppercase;
 	color: $subtitle-color;

@@ -408,6 +408,12 @@ img {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .features-list__subtitle {
+    text-align: center;
+  }
+}
+
 .features-list__text {
   font-size: 14px;
   line-height: 1.71;
